@@ -7,7 +7,7 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/componen
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import PhoneInput from "react-native-international-phone-number"; // Changed from named import to default import
+import PhoneInput from "react-native-international-phone-number";
 import { useToast } from "@/components/ui/use-toast";
 import { X, Check, Phone, Mail, User } from "lucide-react";
 
@@ -139,8 +139,8 @@ export function EditProfileForm() {
                         value={field.value}
                         onChangePhoneNumber={(phoneNumber) => field.onChange(phoneNumber)}
                         disabled={!isEditing}
-                        containerClassName="p-0 rounded-md"
-                        inputClassName="bg-transparent border-none focus:outline-none w-full"
+                        style={{ padding: 0, borderRadius: '0.375rem' }}
+                        inputStyle={{ backgroundColor: 'transparent', border: 'none', width: '100%', outline: 'none' }}
                       />
                     </div>
                   </FormControl>
