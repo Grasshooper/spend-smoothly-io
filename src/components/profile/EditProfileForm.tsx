@@ -7,7 +7,7 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/componen
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { PhoneInput } from "react-native-international-phone-number";
+import PhoneInput from "react-native-international-phone-number"; // Changed from named import to default import
 import { useToast } from "@/components/ui/use-toast";
 import { X, Check, Phone, Mail, User } from "lucide-react";
 
