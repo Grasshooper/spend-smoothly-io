@@ -3,6 +3,7 @@ import React from "react";
 import { Header } from "@/components/layout/header";
 import { BottomNav } from "@/components/layout/bottom-nav";
 import { DashboardCard } from "@/components/ui/dashboard-card";
+import { EditProfileForm } from "@/components/profile/EditProfileForm";
 import {
   User,
   Bell,
@@ -38,10 +39,12 @@ const Profile = () => {
               <p className="text-textSecondary">john.smith@example.com</p>
             </div>
           </div>
-          <button className="btn-secondary w-full mt-4">
-            Edit Profile
-          </button>
         </DashboardCard>
+        
+        {/* Edit Profile Form */}
+        <div className="mb-6">
+          <EditProfileForm />
+        </div>
         
         {/* Settings Categories */}
         <div className="space-y-6 animate-stagger">
