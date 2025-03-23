@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import Transactions from "./pages/Transactions";
 import Statistics from "./pages/Statistics";
 import Profile from "./pages/Profile";
+import AddTransaction from "./pages/AddTransaction";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -23,6 +24,7 @@ const App = () => (
           <Route path="/transactions" element={<Transactions />} />
           <Route path="/statistics" element={<Statistics />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/add-transaction" element={<AddTransaction />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
